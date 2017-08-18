@@ -1,5 +1,18 @@
-echo "./BotInstall.sh (BotUser)"
+
+
+function greenMessage {
+    echo -e "\\033[32;1m${@}\033[0m"
+}
+
+function kekMessage {
+    echo -e "\\033[36;1m${@}\033[0m"
+}
+
+if [ -z "$1" ]
+then
+echo "./Botinstall.sh (BotUser)"
 exit 0
+fi
 
 
 BOTUSER = $1
